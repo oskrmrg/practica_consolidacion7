@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      #NotFoundView{
+        background-color: lightcyan;
+        color: darkblue;
+      }
+    
+      .notFound{
+        width: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="NotFoundView">
+      <h1>Not Found</h1>
+      <p>Página No Encontrada</p>
+      <img src="../assets/404-error-not-found.png" class="img-fluid notFound" alt="404 Not Found">
+     <br><br>
+      <button type="button" class="btn btn-outline-primary"><router-link to="/"><b-icon icon="arrow-return-left"></b-icon>    Regresar</router-link></button>
+    </div>
+    <!-- built files will be auto injected -->
+
+    <script src="https://kit.fontawesome.com/de8c9f5df0.js" crossorigin="anonymous"></script>
+  </body>
+</html>
